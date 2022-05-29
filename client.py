@@ -6,7 +6,7 @@ from datetime import datetime, timezone, timedelta
 
 
 class SagemcomClient:
-    def __init__(self, user: str, password: str, host: str = 'http://192.168.1.1'):
+    def __init__(self, host: str, user: str, password: str):
         self.sess = requests.session()
         self.path = '/cgi/json-req'
         self.id, self.sessId = (0, 0)
